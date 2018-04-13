@@ -1,4 +1,4 @@
-package com.example.deyvi.frugalcombustive;
+package com.example.deyvi.frugalcombustive.entity;
 
 public class Veiculo {
 

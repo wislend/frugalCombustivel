@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="ScrimInsetsView">
+        <attr name="insetForegroundScrim" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="BaseTheme">
+        <attr name="actionBarIconColor" format="color" />
+        <attr name="actionBarInsetStart" format="dimension" />
+        <attr name="spinnerBarInsetStart" format="dimension" />
+        <attr name="textColorPositive" format="color" />
+        <attr name="textColorNegative" format="color" />
+        <attr name="textColorNeutral" format="color" />
+        <attr name="colorAccentDark" format="color" />
+        <attr name="colorError" format="color" />
+        <attr name="backgroundColorPrimary" format="color" />
+        <attr name="backgroundColorPrimaryInverse" format="color" />
+        <attr name="backgroundColorSecondary" format="color" />
+        <attr name="actionItemColor" format="color" />
+        <attr name="photoItemForeground" format="reference" />
+        <attr name="photoItemForegroundBorderless" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyView">
+        <attr name="srcImageEmpty" format="reference" />
+        <attr name="textEmpty" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ButtonNavigationMore">
+        <attr name="prefixSharedPreferences" format="string"/>
+        <attr name="menuResId" format="reference"/>
+        <attr name="defaultIcon" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleColorView">
+        <attr name="colorBackground" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageButtonIon">
+        <attr name="imageColorFilter" format="color" />
+        <attr name="backgroundColorFilter" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="ImageViewIon">
+        <attr name="imageColor" format="color" />
+        <attr name="backgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="DecimalEditText">
+        <attr name="currency" format="boolean" />
+        <attr name="withSymbol" format="boolean" />
+        <attr name="negative" format="boolean" />
+        <attr name="fontDigital" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewMark">
+        <attr name="colorMark" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TextViewIon">
+        <attr name="format"/>
+        <attr name="placesDecimal"/>
+        <attr name="colorEnabled"/>
+        <attr name="colorNegativeValue"/>
+        <attr name="colorPositiveValue"/>
+        <attr name="colorNeutralValue"/>
+    </declare-styleable>
+
+    <declare-styleable name="NumberEditText">
+        <attr name="format"/>
+        <attr name="requestCodeCalculator" format="integer"/>
+        <attr name="placesDecimal"/>
+        <attr name="colorEnabled"/>
+        <attr name="colorNegativeValue"/>
+        <attr name="colorPositiveValue"/>
+        <attr name="colorNeutralValue"/>
+        <attr name="showCalculator" format="boolean"/>
+        <attr name="negativeEnabled" format="boolean"/>
+    </declare-styleable>
+
+    <attr name="placesDecimal" format="integer"/>
+    <attr name="colorEnabled" format="boolean"/>
+    <attr name="colorNegativeValue" format="boolean"/>
+    <attr name="colorPositiveValue" format="boolean"/>
+    <attr name="colorNeutralValue" format="boolean"/>
+
+    <attr name="format">
+        <enum name="currency" value="0"/>
+        <enum name="percent" value="1"/>
+        <enum name="normalText" value="2"/>
+        <enum name="decimal" value="3"/>
+        <enum name="integer" value="4"/>
+        <enum name="date" value="5"/>
+        <enum name="dateTime" value="6"/>
+        <enum name="dateShort" value="7"/>
+        <enum name="dateLong" value="8"/>
+        <enum name="bool" value="9"/>
+        <enum name="currencyNoSymbol" value="10"/>
+
+        <enum name="currencyCustom" value="11"/>
+        <enum name="percentCustom" value="12"/>
+
+    </attr>
+
+
+    <declare-styleable name="ImageViewPedidoStatus">
+        <attr name="statusPedido" format="enum">
+            <enum name="pendente" value="0" />
+            <enum name="andamento" value="1" />
+            <enum name="entregue" value="2" />
+            <enum name="pendente_pagamento" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="EditTextDateSelect">
+        <attr name="labelText" format="string"/>
+        <attr name="helpText" format="string"/>
+    </declare-styleable>
+
+</resources>
