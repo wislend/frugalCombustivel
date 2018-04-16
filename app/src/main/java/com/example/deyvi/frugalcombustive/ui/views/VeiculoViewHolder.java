@@ -9,10 +9,8 @@ import android.util.AttributeSet;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-
 import com.example.deyvi.frugalcombustive.R;
 import com.example.deyvi.frugalcombustive.entity.Veiculo;
-
 import org.androidannotations.annotations.EViewGroup;
 import org.androidannotations.annotations.ViewById;
 

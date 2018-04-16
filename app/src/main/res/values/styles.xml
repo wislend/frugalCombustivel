@@ -8,4 +8,26 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.Drawer" parent="AppTheme"/>
+
+    <style name="AppTheme.BaseInicio" parent="AppTheme">
+        <item name="colorPrimary">@color/white_alpha_75</item>
+        <item name="colorPrimaryDark">@color/white_alpha_75</item>
+        <item name="colorAccent">@color/blue</item>
+    </style>
+
+    <style name="AppTheme.Transluced.Inicial" parent="AppTheme.BaseInicio">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
 </resources>

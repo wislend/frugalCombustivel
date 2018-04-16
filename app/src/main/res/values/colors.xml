@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00675b</color>
+    <color name="colorAccent">#52c7b8</color>
+
+    <color name="session_photo_scrim">#4000</color>
+    <color name="session_photo_scrim_white">#4FFF</color>
+    <color name="body_text_1_inverse">#deffffff</color>
+    <color name="body_text_2_inverse">#8affffff</color>
+    <color name="view_separator">#E0E0E0</color>
+    <color name="background_gray_card">#E3E3E3</color>
+
+    <color name="color_1">#DB4437</color>
+    <color name="color_2">#E91E63</color>
+    <color name="color_3">#FF5722</color>
+    <color name="color_4">#EF6C00</color>
+    <color name="color_5">#689F38</color>
+    <color name="color_6">#0097A7</color>
+    <color name="color_7">#4285F4</color>
+    <color name="color_8">#039BE5</color>
+    <color name="blue">#3F51B5</color>
+    <color name="color_10">#673AB7</color>
+    <color name="color_11">#757575</color>
+
+    <color name="white_alpha_40">#66FFFFFF</color>
+    <color name="white_alpha_75">#BFFFFFFF</color>
+    <color name="white_alpha_70">#B3FFFFFF</color>
+    <color name="white_alpha_60">#99FFFFFF</color>
 </resources>

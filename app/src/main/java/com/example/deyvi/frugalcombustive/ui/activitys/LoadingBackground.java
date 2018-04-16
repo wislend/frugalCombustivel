@@ -25,7 +25,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-@SuppressLint("Registered")
 @EActivity(R.layout.activity_loading_background)
 public class LoadingBackground extends BaseActivity {
 

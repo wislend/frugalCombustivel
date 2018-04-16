@@ -4,12 +4,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/frugal"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/frugal"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.activitys.LoadingBackground_">
+        <activity
+            android:name=".ui.activitys.Apresentacao_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Transluced.Inicial">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -19,7 +22,12 @@
         <activity
             android:name=".MainActivity_"
             android:label="MainActivity" />
-        <activity android:name=".SplashActivity_" />
+        <activity android:name=".ui.activitys.LoadingBackground_" />
+        <activity
+            android:name=".ui.activitys.Home_"
+            android:label="@string/title_activity_home"
+             />
+
 
     </application>
 
