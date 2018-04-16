@@ -1,6 +1,7 @@
 package com.example.deyvi.frugalcombustive.ui.activitys;
 
 
+import android.app.FragmentTransaction;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
@@ -13,6 +14,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
 import com.example.deyvi.frugalcombustive.R;
+import com.example.deyvi.frugalcombustive.ui.fragments.FragmentAddCombustivel;
 import com.github.clans.fab.FloatingActionButton;
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
@@ -30,8 +32,8 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     NavigationView navigationView;
     @ViewById
     FloatingActionButton floatingActionButton;
-    @ViewById
-    Fragment fragment;
+
+    android.app.Fragment fragment;
 
 
     @AfterViews
@@ -48,6 +50,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
             }
         });
 
+        navigationView.setNavigationItemSelectedListener(this);
 
     }
 
@@ -86,32 +89,33 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
+        // Handle navigation view item clicks here.;
 
-     /*   switch(id){
+        switch( item.getItemId()){
 
-            case :
+            case R.id.nav_camera :
+                fragment = new FragmentAddCombustivel();
 
 
-
-        }*/
-
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
-
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_manage) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
+            case  R.id.nav_gallery:
+                fragment = new FragmentAddCombustivel();
 
         }
 
+      replaceFragment(fragment);
+
+
+
+
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+
+    public void replaceFragment(android.app.Fragment fragment){
+        FragmentTransaction transaction = getFragmentManager().beginTransaction();
+        transaction.replace(R.id.fragment, fragment);
+        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }

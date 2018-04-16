@@ -12,7 +12,7 @@ import com.example.deyvi.frugalcombustive.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class FragmentAddCombustivel extends Fragment {
+public class FragmentAddCombustivel extends android.app.Fragment {
 
 
     public FragmentAddCombustivel() {
