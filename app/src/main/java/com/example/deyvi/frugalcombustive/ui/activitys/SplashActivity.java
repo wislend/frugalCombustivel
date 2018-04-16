@@ -1,16 +1,16 @@
-package com.example.deyvi.frugalcombustive;
+package com.example.deyvi.frugalcombustive.ui.activitys;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-
+import com.example.deyvi.frugalcombustive.R;
 import com.example.deyvi.frugalcombustive.util.ConstantsAplication;
-
 import org.androidannotations.annotations.AfterViews;
 import org.androidannotations.annotations.EActivity;
 
 
+@SuppressLint("Registered")
 @EActivity(R.layout.activity_splash)
 public class SplashActivity extends AppCompatActivity {
 
@@ -25,5 +25,17 @@ public class SplashActivity extends AppCompatActivity {
             }
         }, ConstantsAplication.SPLASH_TIME_OUT);
     }
+
+
+    public void CarregarLista(){
+
+
+
+    }
+
+
+
+
+
 
 }

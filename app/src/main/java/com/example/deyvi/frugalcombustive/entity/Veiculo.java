@@ -7,6 +7,17 @@ public class Veiculo {
     private Double volumeTanque;
     private Double quilometragem;
 
+
+    public Veiculo(String marca) {
+        this.marca = marca;
+
+    }
+
+    @Override
+    public String toString() {
+        return marca;
+    }
+
     public String getMarca() {
         return marca;
     }

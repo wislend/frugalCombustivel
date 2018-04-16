@@ -152,7 +152,7 @@ public class BaseActivity extends AppCompatActivity {
         *  QUANDO FIZER CARREGAMENTO DE ALGO MAIS PESADO
         */
         mRootView = (ViewGroup) getWindow().getDecorView().findViewById(android.R.id.content);
-//        initLoadingResource(mRootView);
+        initLoadingResource(mRootView);
 
         if (progrableShowing) {
             showProgressDialogProgressable(messageProgress);
@@ -175,38 +175,38 @@ public class BaseActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
-//    /**
-//     * Tenta iniciar o recurso de loading de acordo com a View informada; que deve ser uma instância de ViewGroup
-//     *
-//     * @param viewGroup
-//     */
-//    @SuppressLint("InflateParams")
-//    private void initLoadingResource(@NonNull ViewGroup viewGroup) {
-//
-//        if (viewContent == null) {
-//            //Primeiro tenta carregar o content, pois,
-//            //se ele nao existir, o recurso nao funcionará
-//            viewContent = (ViewGroup) viewGroup.findViewById(R.id.viewContent);
-//        }
-//
-//        if (viewContent != null) {
-//
-//            //talvez esse layout use um customizado, então vamos dar prioridade a ele
-//            viewLoading = viewGroup.findViewById(R.id.viewLoading);
-//            if (viewLoading == null) {
-//                viewLoading = LayoutInflater.from(this).inflate(R.layout.view_loading, null);
-//                viewGroup.addView(viewLoading);
-//            }
-//            textViewMessage = (TextView) viewLoading.findViewById(R.id.textViewMessage);
-//            if (textViewMessage != null) {
-//                textViewMessage.setText(getMessageTextLoading());
-//            }
-//
-//            //Define o estado inicial (nao mostrar a view Loading)
-//            viewLoading.setVisibility(View.GONE);
-//        }
-//
-//    }
+    /**
+     * Tenta iniciar o recurso de loading de acordo com a View informada; que deve ser uma instância de ViewGroup
+     *
+     * @param viewGroup
+     */
+    @SuppressLint("InflateParams")
+    private void initLoadingResource(@NonNull ViewGroup viewGroup) {
+
+        if (viewContent == null) {
+            //Primeiro tenta carregar o content, pois,
+            //se ele nao existir, o recurso nao funcionará
+            viewContent = (ViewGroup) viewGroup.findViewById(R.id.viewContent);
+        }
+
+        if (viewContent != null) {
+
+            //talvez esse layout use um customizado, então vamos dar prioridade a ele
+            viewLoading = viewGroup.findViewById(R.id.viewLoading);
+            if (viewLoading == null) {
+                viewLoading = LayoutInflater.from(this).inflate(R.layout.view_loading, null);
+                viewGroup.addView(viewLoading);
+            }
+            textViewMessage = viewLoading.findViewById(R.id.textViewMessage);
+            if (textViewMessage != null) {
+                textViewMessage.setText(getMessageTextLoading());
+            }
+
+            //Define o estado inicial (nao mostrar a view Loading)
+            viewLoading.setVisibility(View.GONE);
+        }
+
+    }
 
 
     /**
